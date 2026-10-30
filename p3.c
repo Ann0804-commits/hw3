@@ -38,12 +38,12 @@ size_t hw3_strlen(const char *str)                       { /* TODO */
 char *hw3_strchr(const char *str, int ch)                { /* TODO */ 
     while(*str!='\0'){
         if(*str==(char)ch){
-            return char(*str);
+            return (char*)str;
         }
         str++;
     }
     if(ch=='\0'){
-        return(char*str);
+        return(char*)str;
     }
     return NULL;
 }
